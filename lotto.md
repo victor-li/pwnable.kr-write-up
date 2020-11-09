@@ -110,7 +110,7 @@ int main(int argc, char* argv[]){
 }
 ```
 
-The mistake that the programmer has made, is that it allows duplicate numbers to be entered as input. When the logic calculates the score, every number from the random pool will be matched against every number from the input. Therefore if we use six identical numbers as input, and one of the numbers from the random pool matches the input numbers, the score will be six and we will obtain the flag. This decreases the chance of winning drastically.
+The mistake that the programmer has made, is that it allows duplicate numbers to be entered as input. When the logic calculates the score, every number from the random pool will be matched against every number from the input. Therefore if we use six identical numbers as input, and one of the numbers from the random pool matches the input numbers, the score will be six and we will obtain the flag. This increases the chance of winning drastically.
 
 The input bytes needs to be between 1 and 45, because the numbers from the random pool will be `n mod 45 + 1`. I chose the ASCII character `!`, which is `33` in decimal representation.
 
